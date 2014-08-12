@@ -116,7 +116,7 @@ class SmallTxtDb
     
     function de_cr_lf($value)
     {
-        $v = str_replace(["\r\n","\r\f","\n","\r","\f"],"@CRLF@",$value);
+        $v = str_replace(array("\r\n","\r\f","\n","\r","\f"),"@CRLF@",$value);
         return $v;
     }
     
